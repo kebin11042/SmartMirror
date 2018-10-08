@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swlayMusic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyvMusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/layMusicNoResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="음악 리스트가 없습니다\nSoundcloud를 이용해서 음악을 추가해 주세요"
+                android:textSize="14dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/th_l_grey"/>
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabMusicAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/img_plus_wh"
+            app:backgroundTint="@color/th_l_purple"/>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/th_d_grey"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgvMusicPlaying"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@null"
+            android:scaleType="centerCrop"
+            android:background="@color/th_l_grey"/>
+
+        <TextView
+            android:id="@+id/txtvMusicPlayingSubject"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="노래 목록을 눌러서 미리 듣기 하세요"
+            android:textSize="14dp"
+            android:textColor="@color/th_black"
+            android:singleLine="true"/>
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="6dp">
+
+            <ImageButton
+                android:id="@+id/ibtnMusicPlaying"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_soundcloud"
+                android:background="@drawable/selector_music_circle"
+                android:scaleType="centerInside"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progbMusicPlaying"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

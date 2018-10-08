@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "756810873391",
+    "project_id": "smartmirrordevice"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756810873391:android:e8da09ef8fecfdf2",
+        "android_client_info": {
+          "package_name": "com.tothe.bang.smartmirrordevice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

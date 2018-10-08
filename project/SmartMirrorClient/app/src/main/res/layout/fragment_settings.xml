@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/th_black"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="프로필 정보"
+        android:textSize="13dp"
+        android:textColor="@color/th_d_grey"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/th_l_grey"
+            android:text="email"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txtvSettingsEmail"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/th_l_grey"
+            android:textSize="18dp"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/th_l_grey"
+            android:text="이름"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txtvSettingsName"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/th_l_grey"
+            android:textSize="18dp"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연결된 거울 정보"
+        android:textSize="13dp"
+        android:textColor="@color/th_d_grey"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtvSettingsDeviceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/th_l_grey"
+        android:textSize="18dp"
+        android:text=""/>
+
+    <View
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="비밀번호 변경"
+        android:gravity="center|left"
+        android:textSize="16dp"
+        android:textColor="@color/th_l_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <TextView
+        android:id="@+id/txtvSettingsLocation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="위치 변경"
+        android:gravity="center|left"
+        android:textSize="16dp"
+        android:textColor="@color/th_l_grey"
+        android:background="@drawable/selector_alpha"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <TextView
+        android:id="@+id/txtvSettingsDevice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="스마트 거울 기기 연결"
+        android:gravity="center|left"
+        android:textSize="16dp"
+        android:textColor="@color/th_l_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <TextView
+        android:id="@+id/txtvSettingsNoti"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="알림 연동 설정"
+        android:gravity="center|left"
+        android:textSize="16dp"
+        android:textColor="@color/th_l_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <TextView
+        android:id="@+id/txtvSettingsLogout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="로그아웃"
+        android:gravity="center|left"
+        android:textSize="16dp"
+        android:textColor="@color/th_l_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/th_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtnLoginedTab1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_tab_memo_wh"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_tab" />
+
+        <ImageButton
+            android:id="@+id/ibtnLoginedTab2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_tab_music_grey"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_tab" />
+
+        <ImageButton
+            android:id="@+id/ibtnLoginedTab3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_tab_settings_grey"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_tab" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/vLoginedIndicator"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/th_l_grey"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_d_grey"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpagerLogined"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

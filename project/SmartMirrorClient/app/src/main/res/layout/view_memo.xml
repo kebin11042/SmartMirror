@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_th_l_grey"
+    android:padding="12dp"
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/txtvMemoSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메모메모메모 입니다."
+        android:textSize="13dp"
+        android:textColor="@color/th_black"/>
+
+    <TextView
+        android:id="@+id/txtvMemoDate"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:text="2016-03-30"
+        android:textColor="@color/th_d_grey"/>
+
+</LinearLayout>

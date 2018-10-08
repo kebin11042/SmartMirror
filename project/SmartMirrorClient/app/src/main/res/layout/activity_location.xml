@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/th_black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/ibtnBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_back_wh"
+            android:scaleType="centerCrop"
+            android:background="@drawable/selector_tab"
+            android:padding="12dp"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/th_l_grey"
+            android:text="위치 설정"
+            android:textSize="16dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/th_l_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/th_l_grey"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtxLocationAddr"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/th_black"
+            android:textSize="14dp"
+            android:padding="10dp"
+            android:hint="동명(읍,면)을 입력해 주세요"
+            android:textColorHint="@color/th_d_grey"
+            android:singleLine="true"
+            android:textColor="@color/th_l_grey"/>
+
+        <ImageButton
+            android:id="@+id/ibtnLocationSearch"
+            android:layout_marginLeft="10dp"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_th_l_purple"
+            android:src="@drawable/img_search_l_grey"
+            android:scaleType="centerInside"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/th_black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtvLocationNoResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="검색 결과가 없습니다"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/th_l_grey"
+            android:textCursorDrawable="@drawable/cursor_th_l_grey"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

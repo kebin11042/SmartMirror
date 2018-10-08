@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="alpha">#00000000</color>
+
+    <color name="th_black">#232635</color>
+    <color name="th_green">#0494B3</color>
+    <color name="th_l_purple">#606ACA</color>
+    <color name="th_d_purple">#5264A7</color>
+    <color name="th_d_grey">#9D9FA6</color>
+    <color name="th_l_grey">#E8E9EC</color>
+
+    <color name="facebook">#3D5A98</color>
+    <color name="facebook_pressed">#1D3A78</color>
+
+    <color name="alpha_pressed">#40000000</color>
+    <color name="alpha_pressed_wh">#40FFFFFF</color>
+    <color name="th_l_grey_pressed">#B8B9BC</color>
+    <color name="th_d_grey_pressed">#6D6F86</color>
+    <color name="th_l_purple_pressed">#404AAA</color>
+    <color name="th_green_pressed">#007493</color>
+</resources>
